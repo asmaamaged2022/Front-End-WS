@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    box-sizing: border-box; 
+}
+.hex{
+    
+    background-color: #00ffff;
+}
+.RGB{
+    background-color: rgba(0, 255, 255,0.5);
+    font-weight:bold;
+
+}
+.alpha{
+    background-color:aqua;  
+}
+.Hsl{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: hsl(180, 100%, 50%);
+}
+.alpha,.hex,.Hsl,.RGB{
+    padding: 10px;
+    margin: 10px;
+}  
