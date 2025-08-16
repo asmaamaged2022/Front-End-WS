@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.nav {
+  height: 30px;
+  background-color: rgb(108, 196, 247);
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-areas: 
+  "logo link link link link ";
+}
+.link{
+    grid-area: link;
+    grid-column-start:4 ;
+}
+.logo{
+ grid-area: logo;
+ padding: 0 5%;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 5%;
+}
+
+@media (max-width :480px) {
+    ul{
+        display: none;
+    }
+    .nav{
+        background-color: brown;
+    }
+}

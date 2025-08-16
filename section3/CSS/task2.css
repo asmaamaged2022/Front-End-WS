@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  background-color: #eee;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 5px 20px;
+  width: 500px;
+  height: auto;
+}
+h1 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+label,
+input,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+label,input,textarea{
+      border-radius: 5px;
+
+}
+button{
+    border-radius: 20px;
+}
+.First,
+.Last {
+  display: inline-block;
+  width: 48%;
+}
+.Last {
+  margin-left: 3%;
+}
+
+input {
+  height: 40px;
+  padding: 5px;
+}
+button {
+  height: 40px;
+  background-color: #4c89af;
+  color: white;
+}
+textarea {
+  height: 100px;
+  padding: 5px;
+}
+input:hover,
+button:hover,
+textarea:hover {
+  border: 1px solid #4c89af;
+  box-shadow: 2px 2px 20px 10px rgba(106, 186, 248, 0.2);
+}
+
+.check input {
+  display: inline-block;
+  width: 20px;
+  margin-right: 3%;
+}
+.check label {
+  display: inline-block;
+  width: 80%;
+}
+.check input[type="checkbox"]:hover {
+  border: none;
+  box-shadow: none;
+}
+.check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
