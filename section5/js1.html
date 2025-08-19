@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js1</title>
+  </head>
+  <body>
+    <script>
+      let x = 85;
+      x >= 90 && x <= 100
+        ? console.log("A")
+        : x < 90 && x >= 80
+        ? console.log("B")
+        : x < 80 && x >= 60
+        ? console.log("C")
+        : x < 60 && x >= 50
+        ? console.log("D")
+        : x < 50 && x >= 0
+        ? console.log("F")
+        : console.log("rong value");
+      if (x>=90&&x<=100) {
+          console.log("A");
+      }
+      else if(x<90&&x>=80){
+          console.log("B")
+      }
+       else if(x<80&&x>=60){
+          console.log("C")
+      }
+       else if(x<60&&x>=50){
+          console.log("D")
+      }
+       else if(x<50&&x>=0){
+          console.log("F")
+      }
+      else{
+          console.log("rong value")
+      }
+        switch (true) {
+          case x >= 90 && x <= 100:
+            console.log("A");
+            break;
+          case x < 90 && x >= 80:
+            console.log("B");
+            break;
+          case x < 80 && x >= 60:
+            console.log("C");
+            break;
+          case x < 60 && x >= 50:
+            console.log("D");
+            break;
+          case x < 50 && x >= 0:
+            console.log("F");
+            break;
+          default:
+            console.log("rong value");
+            break;
+        }
+    </script>
+  </body>
+</html>
