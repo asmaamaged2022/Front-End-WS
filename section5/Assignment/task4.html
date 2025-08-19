@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        
+      class book {
+        constructor(titel, author, year) {
+          (this.titel = titel), (this.author = author), (this.year = year);
+        }
+      }
+      const book1 = new book("Data", "x", 2020);
+      const book2 = new book("ds", "y", 2024);
+
+      console.log(book2.author);
     </script>
-</body>
+  </body>
 </html>
