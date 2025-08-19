@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const calc = {
+        a: 4,
+        b: 5,
+        add: function () {
+          console.log(this.a + this.b);
+        //   return this.a + this.b;
+        },
+        substract: function () {
+          console.log(this.a - this.b);
+        //   return this.a - this.b;
+        },
+        multiply: function () {
+          console.log(this.a * this.b);
+        //   return this.a * this.b;
+        },
+        divide: function () {
+          console.log(this.a / this.b);
+        //   return this.a / this.b;
+        },
+      };
+      calc.add();
+      calc.divide();
+      calc.multiply();
+      calc.substract();
+    //   console.log(calc.add());
+    //   console.log(calc.divide());
+    //   console.log(calc.multiply());
+    //   console.log(calc.substract());
+    </script>
+  </body>
+</html>
