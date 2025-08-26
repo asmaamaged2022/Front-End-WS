@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      alert(`Welcome to the Event `);
+
+      let userName = prompt(`What is your name`);
+
+      if (userName) {
+        let Register = confirm(`Do you want to register${userName}`);
+
+        if (Register) {
+          localStorage.setItem("userName", userName);
+          sessionStorage.setItem("isRegistered", "true");
+
+          alert(`Thank you for registering,${userName}`);
+        } else {
+          alert(`Okay`);
+        }
+      } else {
+        alert(`You didn't enter a name`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        margin-top: 50px;
+      }
+      #countdown {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      button {
+        margin: 5px;
+        padding: 10px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Event Countdown</h1>
+    <div id="countdown">Starting...</div>
+
+    <h2>Window Control</h2>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="closeWindow()">Close Window</button>
+    <button onclick="focusWindow()">Focus Window</button>
+    <button onclick="stopCountdown()">Stop Countdown</button>
+
+    <script>
+      let seconds = 10;
+      let countdownElement = document.getElementById("countdown");
+
+      let countdown = setInterval(() => {
+        countdownElement.textContent = `Time Left:${seconds} s`;
+        seconds--;
+
+        if (seconds < 0) {
+          clearInterval(countdown);
+          countdownElement.textContent = `Event Started`;
+        }
+      }, 1000); 
+
+      setTimeout(() => {
+        alert(`Reminder: The event is about to start`);
+      }, 7000); 
+
+      let eventWindow;
+
+      function openWindow() {
+        eventWindow = window.open("", "Event Info", "width=400,height=500");
+        eventWindow.document.write(
+          "<h1>Event Information</h1><p>This is the event details window</p>"
+        );
+      }
+
+      function closeWindow() {
+        if (eventWindow) eventWindow.close();
+      }
+
+      function focusWindow() {
+        if (eventWindow) eventWindow.focus();
+      }
+
+      function stopCountdown() {
+        clearInterval(countdown);
+        countdownElement.textContent = `Countdown Stopped`;
+      }
+    </script>
+  </body>
+</html>
